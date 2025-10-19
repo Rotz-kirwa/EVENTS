@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About Us",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "cta": {
+    "getQuote": "Get a Free Quote",
+    "exploreServices": "Explore Our Services",
+    "learnMore": "Learn More",
+    "bookNow": "Book Now",
+    "contactUs": "Contact Us"
+  },
+  "hero": {
+    "headline": "Your Dream Event, Perfected by Events",
+    "subheading": "From tents and catering to décor and logistics, we bring your vision to life"
+  },
+  "services": {
+    "eventPlanning": "Event Planning",
+    "catering": "Catering & Refreshments",
+    "decoration": "Décor & Ambiance",
+    "photography": "Photography & Videography"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "stayConnected": "Stay Connected",
+    "newsletterText": "Subscribe to our newsletter for event tips and exclusive offers",
+    "emailPlaceholder": "Your email",
+    "subscribe": "Subscribe",
+    "allRightsReserved": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

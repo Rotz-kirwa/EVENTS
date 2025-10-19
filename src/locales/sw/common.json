@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Nyumbani",
+    "services": "Huduma",
+    "portfolio": "Kazi Zetu",
+    "about": "Kuhusu Sisi",
+    "blog": "Blogu",
+    "contact": "Wasiliana"
+  },
+  "cta": {
+    "getQuote": "Pata Nukuu Bila Malipo",
+    "exploreServices": "Gundua Huduma Zetu",
+    "learnMore": "Jifunze Zaidi",
+    "bookNow": "Weka Nafasi Sasa",
+    "contactUs": "Wasiliana Nasi"
+  },
+  "hero": {
+    "headline": "Tukio Lako la Ndoto, Limekamilishwa na Events",
+    "subheading": "Kutoka mahema na chakula hadi mapambo na usimamizi, tunaleta maono yako kuwa ukweli"
+  },
+  "services": {
+    "eventPlanning": "Upangaji wa Matukio",
+    "catering": "Chakula na Vinywaji",
+    "decoration": "Mapambo na Mandhari",
+    "photography": "Picha na Video"
+  },
+  "footer": {
+    "quickLinks": "Viungo vya Haraka",
+    "services": "Huduma Zetu",
+    "stayConnected": "Endelea Kuungana",
+    "newsletterText": "Jiandikishe kwa jarida letu kupata vidokezo vya matukio na ofa maalum",
+    "emailPlaceholder": "Barua pepe yako",
+    "subscribe": "Jiandikishe",
+    "allRightsReserved": "Haki zote zimehifadhiwa",
+    "privacy": "Sera ya Faragha",
+    "terms": "Masharti ya Huduma"
+  }
+}

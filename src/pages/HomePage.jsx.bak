@@ -1,0 +1,171 @@
+const HomePage = () => {
+  return (
+    <div style={{ fontFamily: 'Arial, sans-serif' }}>
+      {/* Hero Section */}
+      <section style={{ height: '100vh', position: 'relative' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', height: '100%' }}>
+          <div style={{ 
+            backgroundImage: 'url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdlZGRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}></div>
+          <div style={{ 
+            backgroundImage: 'url("https://images.unsplash.com/photo-1607861884586-c7cfaed16290?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHdlZGRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}></div>
+          <div style={{ 
+            backgroundImage: 'url("https://plus.unsplash.com/premium_photo-1677221924665-be77ac5d2899?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmlydGhkYXklMjBwYXJ0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}></div>
+          <div style={{ 
+            backgroundImage: 'url("https://images.unsplash.com/photo-1707589338174-dc1ddc18945a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGV2ZW50cyUyMGRlY29yYXRpb25zfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}></div>
+        </div>
+        
+        {/* Overlay Content */}
+        <div style={{ 
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(0,0,0,0.5)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          color: 'white',
+          textAlign: 'center'
+        }}>
+          <div style={{ maxWidth: '800px', padding: '2rem' }}>
+            <h1 style={{ fontSize: '4rem', marginBottom: '1rem', fontWeight: 'bold' }}>
+              Premium Event Organizing
+            </h1>
+            <p style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>
+              Creating Unforgettable Experiences From Vision to Reality
+            </p>
+            <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <button style={{ 
+                backgroundColor: '#D4AF37', 
+                color: '#001F3F', 
+                padding: '1rem 2rem', 
+                border: 'none', 
+                borderRadius: '0.5rem',
+                fontSize: '1.1rem',
+                cursor: 'pointer',
+                fontWeight: 'bold'
+              }}>
+                Get a Free Quote
+              </button>
+              <button style={{ 
+                backgroundColor: 'transparent', 
+                color: 'white', 
+                padding: '1rem 2rem', 
+                border: '2px solid white', 
+                borderRadius: '0.5rem',
+                fontSize: '1.1rem',
+                cursor: 'pointer'
+              }}>
+                Explore Services
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section style={{ padding: '4rem 2rem', backgroundColor: '#f8f9fa' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '3rem', color: '#001F3F', marginBottom: '3rem' }}>Our Services</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+            {[
+              { title: 'Wedding Planning', desc: 'Complete wedding coordination from start to finish', image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdlZGRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500' },
+              { title: 'Corporate Events', desc: 'Professional business events and conferences' },
+              { title: 'Birthday Parties', desc: 'Memorable celebrations for all ages' },
+              { title: 'Catering Services', desc: 'Delicious food and beverage options' },
+              { title: 'Decoration & Design', desc: 'Beautiful themes and elegant setups' },
+              { title: 'Photography', desc: 'Professional event photography and videography' }
+            ].map((service, index) => (
+              <div key={index} style={{ 
+                backgroundColor: 'white', 
+                borderRadius: '1rem',
+                overflow: 'hidden',
+                boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+                transition: 'transform 0.3s ease'
+              }}>
+                {service.image && (
+                  <img src={service.image} alt={service.title} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                )}
+                <div style={{ padding: '2rem' }}>
+                  <h3 style={{ color: '#D4AF37', fontSize: '1.5rem', marginBottom: '1rem' }}>{service.title}</h3>
+                  <p style={{ color: '#666', lineHeight: '1.6' }}>{service.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section style={{ padding: '4rem 2rem', backgroundColor: '#001F3F', color: 'white' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '3rem', marginBottom: '2rem' }}>Why Choose Us</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '3rem', marginTop: '3rem' }}>
+            <div>
+              <h3 style={{ color: '#D4AF37', fontSize: '1.5rem', marginBottom: '1rem' }}>10+ Years Experience</h3>
+              <p>Decade of expertise in creating memorable events</p>
+            </div>
+            <div>
+              <h3 style={{ color: '#D4AF37', fontSize: '1.5rem', marginBottom: '1rem' }}>500+ Events</h3>
+              <p>Successfully organized events of all sizes</p>
+            </div>
+            <div>
+              <h3 style={{ color: '#D4AF37', fontSize: '1.5rem', marginBottom: '1rem' }}>100% Satisfaction</h3>
+              <p>Committed to exceeding client expectations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section style={{ padding: '4rem 2rem', backgroundColor: '#f8f9fa' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '3rem', color: '#001F3F', marginBottom: '2rem' }}>Ready to Plan Your Event?</h2>
+          <p style={{ fontSize: '1.2rem', color: '#666', marginBottom: '2rem' }}>
+            Contact us today for a free consultation and let's bring your vision to life
+          </p>
+          <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '2rem' }}>
+            <div>
+              <strong>Phone:</strong> +254 XXX XXX XXX
+            </div>
+            <div>
+              <strong>Email:</strong> info@events.co.ke
+            </div>
+          </div>
+          <button style={{ 
+            backgroundColor: '#D4AF37', 
+            color: '#001F3F', 
+            padding: '1rem 3rem', 
+            border: 'none', 
+            borderRadius: '0.5rem',
+            fontSize: '1.2rem',
+            cursor: 'pointer',
+            fontWeight: 'bold'
+          }}>
+            Contact Us Now
+          </button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer style={{ backgroundColor: '#001F3F', color: 'white', padding: '2rem', textAlign: 'center' }}>
+        <p>&copy; 2024 Premium Events. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default HomePage;
